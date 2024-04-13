@@ -1,0 +1,505 @@
+<html>
+     <head>
+          <title>wwbsite3</title>
+          <link rel="stylesheet" href="css/style.css">
+          <!-- bootstrap 5-->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+          <!-- bootstrap 4-->
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+          <!-- font-awesome -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+     <body>
+     <!-- navbar -->
+     <nav class="navbar navbar-dark navbar-expand-lg w-100 n bg-info">
+     <!-- Navbar content -->
+     <a class="navbar-brand" href="#">
+      <img src="img/3.png" width="80px" height="40px" class="ml-3">
+     </a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+     <ul class="navbar-nav mx-auto fs-4">
+      <li class="nav-item active ml-2">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item ml-2">
+        <a class="nav-link" href="#food">Food</a>
+      </li>
+      <li class="nav-item ml-2">
+        <a class="nav-link" href="#More">More</a>
+      </li>
+      <li class="nav-item dropdown ml-2">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Shop Option
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#food">Food</a>
+          <a class="dropdown-item" href="#food">Drinks</a>
+          <a class="dropdown-item" href="#food">Vegetables</a>
+        </div>
+      </li>
+      <li class="nav-item ml-2">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+    </ul>
+    <form class="form-inline">
+     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+     <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+   </form>
+   <!-- Button trigger modal -->
+   <button type="button" class="btn btn-light ml-1" data-toggle="modal" data-target="#exampleModal">
+     Log In
+   </button>
+  </div>
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header bg-dark text-center">
+           <h5 class="modal-title text-light" id="exampleModalLabel">LOG IN</h5>
+           <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+           Enter your name:
+           <input type="text" class="d-block m-2 w-75 border-dark border-top p-2 rounded-pill"> 
+           Enter your password:
+           <input type="password" class="d-block m-2 w-75 border-dark border-bottom p-2 rounded-pill"> 
+         </div>
+         <div class="modal-footer bg-dark">
+           <button type="button" class="btn btn-secondary text-light" data-dismiss="modal"><i class="fa fa-times" style="font-size: 25px;"></i></button>
+           <button type="button" class="btn btn-info">SAVE</button>
+         </div>
+       </div>
+     </div>
+   </div>
+  </div>
+     </nav>
+
+     <!-- aside -->
+       <aside>
+         <ul class="u">
+          <a href="#"><li><i class="fa fa-twitter" style="font-size: 18px;"></i></li></a>
+          <a href="#"><li><i class="fa fa-instagram" style="font-size: 18px;"></i></li></a>
+          <a href="#"><li><i class="fa fa-whatsapp" style="font-size: 18px;"></i></li></a>
+          <a href="#"><li><i class="fa fa-linkedin" style="font-size: 18px;"></i></li></a>
+         </ul>
+       </aside>
+
+     <!-- home image -->
+     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner mt-3">
+            <div class="carousel-item active mm">
+              <img src="img/man-delivering-groceries-customers.jpg" class="d-block w-100 vh-100" alt="...">
+            </div>
+            <div class="carousel-item mm">
+              <img src="img/young-woman-with-fruit-her-hands-supermarket.jpg" class="d-block w-100 vh-100" alt="...">
+            </div>
+            <div class="carousel-item mm">
+              <img src="img/e-commerce-shop-online-homepage-sale-concept_53876-124963.jpg" class="d-block w-100 vh-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+
+      <!-- section 1 -->
+      <section id="food">
+        <div class="container">
+        <h1 class="text-center m-4 text-dark">Food</h1>
+        <div class="row justify-content-between">
+        <div class="card my-3 shadow-lg col-12 col-lg-5 col-xl-3 mx-auto p-0 imgg" style="width: 19rem;">
+          <img src="img/ع.png" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h5 class="card-title">مربى الفراولة</h5>
+            <p class="card-text">Some quick example text to build on the card title</p>
+            <a href="#" class="btn btn-secondary w-30"><i class="fa fa-hand-o-right"></i> About</a> 
+            <a href="#" class="btn btn-info w-50"><i class="fa fa-cart-plus" style="font-size:22px"></i></a> 
+          </div>
+        </div>
+        <div class="card my-3 shadow-lg col-12 col-lg-5 col-xl-3 mx-auto p-0 imgg" style="width: 19rem;">
+          <img src="img/Oil_and_Ghee_087823d44e.png" class="card-img-top" alt="..."  height="210px">
+          <div class="card-body">
+            <h5 class="card-title">زيت وسمنة </h5>
+            <p class="card-text">Some quick example text to build on the card title</p>
+            <a href="#" class="btn btn-secondary w-30"><i class="fa fa-hand-o-right"></i> About</a>  
+            <a href="#" class="btn btn-info w-50"><i class="fa fa-cart-plus" style="font-size:22px"></i></a>  
+          </div>
+        </div>
+        <div class="card my-3 shadow-lg col-12 col-lg-5 col-xl-3 mx-auto p-0 imgg" style="width: 19rem;">
+          <img src="img/٥٥٥.png" class="card-img-top" alt="..." height="210px">
+          <div class="card-body">
+            <h5 class="card-title">طحينة</h5>
+            <p class="card-text">Some quick example text to build on the card title</p>
+            <a href="#" class="btn btn-secondary w-30"><i class="fa fa-hand-o-right"></i> About</a>  
+            <a href="#" class="btn btn-info w-50"><i class="fa fa-cart-plus" style="font-size:22px"></i></a>  
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="card my-3 shadow-lg col-12 col-lg-5 col-xl-3 mx-auto p-0 imgg" style="width: 19rem;">
+          <img src="img/pngwing.com (10).png" class="card-img-top" alt="..." height="210px">
+          <div class="card-body">
+            <h5 class="card-title">شوكولا</h5>
+            <p class="card-text">Some quick example text to build on the card title</p>
+            <a href="#" class="btn btn-secondary w-30"><i class="fa fa-hand-o-right"></i> About</a>  
+            <a href="#" class="btn btn-info w-50"><i class="fa fa-cart-plus" style="font-size:22px"></i></a>  
+          </div>
+        </div>
+        <div class="card my-3 shadow-lg col-12 col-lg-5 col-xl-3 mx-auto p-0 imgg" style="width: 19rem;">
+          <img src="img/pngwing.com (6).png" class="card-img-top" alt="..."  height="210px">
+          <div class="card-body">
+            <h5 class="card-title">حليب بقري</h5>
+            <p class="card-text">Some quick example text to build on the card title</p>
+            <a href="#" class="btn btn-secondary w-30"><i class="fa fa-hand-o-right"></i> About</a>  
+            <a href="#" class="btn btn-info w-50"><i class="fa fa-cart-plus" style="font-size:22px"></i></a> 
+          </div>
+        </div>
+        <div class="card my-3 shadow-lg col-12 col-lg-5 col-xl-3 mx-auto p-0 imgg" style="width: 19rem;">
+          <img src="img/pngwing.com (18).png" class="card-img-top" alt="..." height="210px">
+          <div class="card-body">
+            <h5 class="card-title">قسم الفاكهة</h5>
+            <p class="card-text">Some quick example text to build on the card title</p>
+            <a href="#" class="btn btn-secondary w-30"><i class="fa fa-hand-o-right"></i> About</a> 
+            <a href="#" class="btn btn-info w-50"><i class="fa fa-cart-plus" style="font-size:22px"></i></a> 
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="card my-3 shadow-lg col-12 col-lg-5 col-xl-3 mx-auto p-0 imgg" style="width: 19rem;">
+          <img src="img/pngwing.com (9).png" class="card-img-top" alt="..." height="210px">
+          <div class="card-body">
+            <h5 class="card-title">نوتيلا</h5>
+            <p class="card-text">Some quick example text to build on the card title</p>
+            <a href="#" class="btn btn-secondary w-30"><i class="fa fa-hand-o-right"></i> About</a>  
+            <a href="#" class="btn btn-info w-50"><i class="fa fa-cart-plus" style="font-size:22px"></i></a> 
+          </div>
+        </div>
+        <div class="card my-3 shadow-lg col-12 col-lg-5 col-xl-3 mx-auto p-0 imgg" style="width: 19rem;">
+          <img src="img/pngwing.com (5).png" class="card-img-top" alt="..."  height="210px">
+          <div class="card-body">
+            <h5 class="card-title">حلاوة طحينية</h5>
+            <p class="card-text">Some quick example text to build on the card title</p>
+            <a href="#" class="btn btn-secondary w-30"><i class="fa fa-hand-o-right"></i> About</a>  
+            <a href="#" class="btn btn-info w-50"><i class="fa fa-cart-plus" style="font-size:22px"></i></a>  
+          </div>
+        </div>
+        <div class="card my-3 shadow-lg col-12 col-lg-5 col-xl-3 mx-auto p-0 imgg" style="width: 19rem;">
+          <img src="img/pngwing.com (19).png" class="card-img-top" alt="..." height="210px">
+          <div class="card-body">
+            <h5 class="card-title">قسم الخضار</h5>
+            <p class="card-text">Some quick example text to build on the card title</p>
+            <a href="#" class="btn btn-secondary w-30"><i class="fa fa-hand-o-right"></i> About</a>  
+            <a href="#" class="btn btn-info w-50"><i class="fa fa-cart-plus" style="font-size:22px"></i></a> 
+          </div>
+        </div>
+      </div>
+      </div>
+      </section>
+
+      <!-- section 2-->
+      <section>
+      <div class="container-fluid text-center bg-secondary text-light p-5 mt-4 mb-5">
+           <h1 class="mb-4">Welcom to shop</h1>
+           <h5>Enjoy browsing all sections of the market</h5> 
+           <h5>If you want to buy something, add it to the cart and enter the address</h5>
+           <h5>All products are guaranteed and licensed</h5>
+      </div>
+      </section>
+
+      <!-- section 3-->
+      <section>
+        <div class="bag mb-5">
+        </div>
+      </section>
+      
+      <!-- section 4-->
+      <section id="More">
+        <div class="container">
+        <h1 class="text-center m-4 text-dark">More</h1>
+        <div class="row justify-content-between">
+        <div class="card my-3 shadow-lg s4 col-12 col-lg-5 col-xl-3 mx-auto p-0 imgg" style="width: 19rem;">
+          <img src="img/pngwing.com (1).png" class="card-img-top" alt="..." height="210px">
+          <div class="card-body">
+            <h5 class="card-title">مناديل ورقية</h5>
+            <p class="card-text">Some quick example text</p> 
+            <a href="#" class="btn btn-info w-50">+Add</a> 
+          </div>
+        </div>
+        <div class="card my-2 shadow-lg s4 col-12 col-lg-5 col-xl-3 mx-auto p-0 imgg" style="width: 19rem;">
+          <img src="img/pngwing.com (11).png" class="card-img-top" alt="..."  height="210px">
+          <div class="card-body">
+            <h5 class="card-title">اوريو</h5>
+            <p class="card-text">Some quick example text</p>
+            <a href="#" class="btn btn-info w-50">+Add</a> 
+          </div>
+        </div>
+        <div class="card my-3 shadow-lg s4 col-12 col-lg-5 col-xl-3 mx-auto p-0 imgg" style="width: 19rem;">
+          <img src="img/pngwing.com (7).png" class="card-img-top" alt="..." height="210px">
+          <div class="card-body">
+            <h5 class="card-title">نسكوك</h5>
+            <p class="card-text">Some quick example text</p>
+            <a href="#" class="btn btn-info w-50">+Add</a> 
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="card my-3 shadow-lg s4 col-12 col-lg-5 col-xl-3 mx-auto p-0 imgg" style="width: 19rem;">
+          <img src="img/pngwing.com (27).png" class="card-img-top" alt="..." height="210px">
+          <div class="card-body">
+            <h5 class="card-title">مسحوق غسيل اومو</h5>
+            <p class="card-text">Some quick example text</p>
+            <a href="#" class="btn btn-info w-50">+Add</a> 
+          </div>
+        </div>
+        <div class="card my-3 shadow-lg s4 col-12 col-lg-5 col-xl-3 mx-auto p-0 imgg" style="width: 19rem;">
+          <img src="img/pngwing.com (26).png" class="card-img-top" alt="..."  height="210px">
+          <div class="card-body">
+            <h5 class="card-title">مسحوق غسيل ايريل</h5>
+            <p class="card-text">Some quick example text</p>
+            <a href="#" class="btn btn-info w-50">+Add</a> 
+          </div>
+        </div>
+        <div class="card my-3 shadow-lg s4 col-12 col-lg-5 col-xl-3 mx-auto p-0 imgg" style="width: 19rem;">
+          <img src="img/pngwing.com (2).png" class="card-img-top" alt="..." height="210px">
+          <div class="card-body">
+            <h5 class="card-title">مناديل معطرة</h5>
+            <p class="card-text">Some quick example text</p>
+            <a href="#" class="btn btn-info w-50">+Add</a> 
+          </div>
+        </div>
+      </div>
+      </div>
+      </section>
+
+      <!-- section 5-->
+      <section>
+        <div class="container-fluid">
+        <h1 class="text-center m-4 text-dark">Our Services</h1>
+        <div class="media border p-3 mb-3 bg-light">
+          <img src="img/٦.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:75px;">
+          <div class="media-body">
+            <h4 class="text-warning">Delivery <small class="text-dark"><i>Fast</i></small></h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsum voluptates magnam voluptatem, 
+              ratione veniam eius quasi quis officia. 
+              Assumenda numquam tempora et nobis esse blanditiis culpa atque, necessitatibus nesciunt.</p>
+          </div>
+        </div>
+        <div class="media border p-3 mb-3 bg-light">
+          <img src="img/pngwing.com (22).png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:75px;">
+          <div class="media-body">
+            <h4 class="text-warning">Sale <small class="text-dark"><i>Discount</i></small></h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsum voluptates magnam voluptatem, 
+              ratione veniam eius quasi quis officia. 
+              Assumenda numquam tempora et nobis esse blanditiis culpa atque, necessitatibus nesciunt.</p>
+          </div>
+        </div>
+        <div class="media border p-3 mb-3 bg-light">
+          <img src="img/pngwing.com (21).png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:75px;">
+          <div class="media-body">
+          <h4 class="text-warning">Order<small class="text-dark"><i> online</i></small></h4>            
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsum voluptates magnam voluptatem, 
+              ratione veniam eius quasi quis officia. 
+              Assumenda numquam tempora et nobis esse blanditiis culpa atque, necessitatibus nesciunt.</p>
+          </div>
+        </div>
+        </div>
+      </section>
+
+     <!-- section 6-->
+      <section>
+        <div class="container mt-5">
+          <h1 class="text-center m-4 text-dark">sections of shop</h1>
+          <div class="card mb-3 shadow-lg g my-3 w-100" style="width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title mb-4">قسم المعجنات</h5>
+                  <div class="line"></div>
+                  <p class="card-text fs-5">This is a wider card with supporting text below as a natural lead-in to additional content.
+                     This content is a little bit longer.</p>
+                  <a href="#" class="btn btn-secondary w-30 my-3"><i class="fa fa-hand-o-right"></i> About</a>
+                  <a href="#" class="btn btn-info w-30 my-3">+Add</a>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="col-md-5 l">
+                <img src="img/bread-table.jpg" class="img-fluid rounded-start h-100 w-100" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 shadow-lg g my-3" style="width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-5 l">
+                <img src="img/top-view-meat-with-garlic-herbs.jpg" class="img-fluid rounded-start h-100" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title mb-4">قسم اللحوم</h5>
+                  <div class="line"></div>
+                  <p class="card-text fs-5">This is a wider card with supporting text below as a natural lead-in to additional content.
+                    This content is a little bit longer.</p>
+                 <a href="#" class="btn btn-secondary w-30 my-3"><i class="fa fa-hand-o-right"></i> About</a>
+                 <a href="#" class="btn btn-info w-30 my-3">+Add</a>
+                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 shadow-lg g my-3" style="width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title mb-4"> عصائر طبيعية</h5>
+                  <div class="line"></div>
+                  <p class="card-text fs-5">This is a wider card with supporting text below as a natural lead-in to additional content.
+                    This content is a little bit longer.</p>
+                 <a href="#" class="btn btn-secondary w-30 my-3"><i class="fa fa-hand-o-right"></i> About</a>
+                 <a href="#" class="btn btn-info w-30 my-3">+Add</a>
+                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="col-md-5 l">
+                <img src="img/immunity-boosting-food-healthy-lifestyle-with-citrus_23-2149211498.jpg" class="img-fluid rounded-start h-100" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 shadow-lg g my-3" style="width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-5 l">
+                <img src="img/pngwing.com (23).png" class="img-fluid rounded-start h-100" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title mb-4">قسم البهارات</h5>
+                  <div class="line"></div>
+                  <p class="card-text fs-5">This is a wider card with supporting text below as a natural lead-in to additional content.
+                    This content is a little bit longer.</p>
+                 <a href="#" class="btn btn-secondary w-30 my-3"><i class="fa fa-hand-o-right"></i> About</a>
+                 <a href="#" class="btn btn-info w-30 my-3">+Add</a>
+                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 7-->
+      <section>
+        <div class="bag2 mb-5 mt-5">
+        </div>
+      </section>
+
+      <!-- section 8 -->
+      <section>
+        <div class="container">
+        <h1 class="text-center m-4 text-dark">New</h1>
+        <div class="row justify-content-between">
+        <div class="card my-2 b1 h8 outline col-11 col-lg-5 col-xl-3 mx-auto" style="height: 19rem;">
+          <div class="card-body text-center">
+          </div>
+        </div>
+        <div class="card my-2 b2 h8 outline col-11 col-lg-5 col-xl-3 mx-auto" style="height: 19rem;">
+          <div class="card-body text-center">
+          </div>
+        </div>
+        <div class="card my-2 b3 h8 outline col-11 col-lg-5 col-xl-3 mx-auto" style="height: 19rem;">
+          <div class="card-body text-center">
+          </div>
+        </div>
+      </div>
+      </div>
+      </section>
+
+      <!-- section 9-->
+      <section id="contact">
+        <div class="container">
+        <h1 class="text-center m-4 text-dark">Contact Us</h1>
+        <div class="row justify-content-between">
+        <div class="card my-2 bg-light shadow-lg rounded-3 col-11 col-lg-5 col-xl-2 mx-auto" style="width: 13rem;">
+          <div class="card-body text-dark mx-auto">
+            <h5 class="card-title">INSTGRAM</h5>
+            <a href="#"><img src="img/4.png" width="130px" height="130px"></a>
+            <p class="card-text">@healthy.com</p> 
+          </div>
+        </div>
+        <div class="card my-2 bg-light shadow-lg rounded-3 col-11 col-lg-5 col-xl-2 mx-auto" style="width: 13rem;">
+          <div class="card-body text-dark mx-auto">
+            <h5 class="card-title">TWITTER</h5>
+            <a href="#"><img src="img/88.png" width="130px" height="130px"></a>
+            <p class="card-text">@healthy.com</p>
+          </div>
+        </div> 
+        <div class="card my-2 bg-light shadow-lg rounded-3 col-11 col-lg-5 col-xl-2 mx-auto" style="width: 13rem;">
+          <div class="card-body text-dark mx-auto">
+            <h5 class="card-title">WHATS APP</h5>
+            <a href="#"><img src="img/7.png" width="130px" height="130px"></a>
+            <p class="card-text">+963 977 8262</p>
+          </div>
+        </div>
+        <div class="card my-2 bg-light shadow-lg rounded-3 col-11 col-lg-5 col-xl-2 mx-auto" style="width: 13rem;" >
+          <div class="card-body text-dark mx-auto">
+            <h5 class="card-title">FACEBOOK</h5>
+            <a href="#"><img src="img/r.png" width="130px" height="130px"></a>
+            <p class="card-text">healthy market</p>
+          </div>
+        </div>
+      </div>
+      </div>
+      </section>
+      
+      <!-- footer-->
+      <footer>
+        <div class="container-fluid text-center bg-info text-light mt-4">
+          <div class="row">
+          <div class="col mt-5">
+          <p class="fs-3">food section</p>
+          <img src="img/٢.png" width="110px" height="100px">
+          <hr class="bg-light">
+          <p>Tel : 000-000-000</p>
+          <p>Address : SYRIA</p>
+          <p>Fax : 000-000-000</p>
+        </div>
+        <div class="col mt-5">
+          <p class="fs-3">drinks section</p>
+          <img src="img/pngwing.com.png" width="110px" height="100px">
+          <hr class="bg-light">
+          <p>Tel : 000-000-000</p>
+          <p>Address : SYRIA</p>
+          <p>Fax : 000-000-000</p>
+        </div>
+        <div class="col mt-5">
+          <p class="fs-3">Sale discount</p>
+          <img src="img/٧.png" width="110px" height="100px">
+          <hr class="bg-light">
+          <p>Tel : 000-000-000</p>
+          <p>Address : SYRIA</p>
+          <p>Fax : 000-000-000</p>
+        </div>
+      </div>
+      <p class="mt-4 fs-4">COPYRIGHT &copy; 2024 Shahed Abd Allatif. ALL RIGHTS</p>
+        </div>
+      </footer>
+
+     <!-- bootstrap 5-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+      <!-- bootstrap 4-->
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+     </body>
+</html>
